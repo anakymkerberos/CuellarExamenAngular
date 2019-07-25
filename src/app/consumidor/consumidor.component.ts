@@ -47,15 +47,11 @@ export class ConsumidorComponent implements OnInit {
   }
 
   metodoEgg() {
-    if (!this.funSegundoBoton && this.funTercerBoton && !this.funCuartoBoton && this.funQuintoBoton) {
+    this.funEggBoton = false;
+    if (!this.funSegundoBoton && this.funTercerBoton && !this.funCuartoBoton) {
       this.funEggBoton = true;
     }
-    else {
-      this.funEggBoton = false;
-    }
   }
-
-
   getQuotes() {
     return this.servicio1.getQuotes()
       .subscribe(data => {
