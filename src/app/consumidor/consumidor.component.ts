@@ -47,7 +47,7 @@ export class ConsumidorComponent implements OnInit {
   }
 
   metodoEgg() {
-    if (!this.funSegundoBoton && this.funTercerBoton && !this.funCuartoBoton) {
+    if (!this.funSegundoBoton && this.funTercerBoton && !this.funCuartoBoton && this.funQuintoBoton) {
       this.funEggBoton = true;
     }
     else {
