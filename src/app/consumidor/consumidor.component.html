@@ -1,19 +1,21 @@
 <div *ngIf='funQuintoBoton'>
-<label>{{author}}</label>
-<br>
-<label appMiDirectiva *ngIf='funSegundoBoton'>{{quote}}</label>
-<br>
-<button (click)="getQuotes()" *ngIf='funTercerBoton'>Obtener Mensaje</button>
-<br>
-<button (click)="metodoSegundoBoton()">Segundo Boton</button>
-<br>
-<button (click)="metodoTercerBoton()">Tercer Boton</button>
-<br>
-<img src="../../assets/imagenes/image.jpg" *ngIf='funCuartoBoton'>
-<br> 
-<button (click)="metodoCuartoBoton()">Cuarto Boton</button>
-<br>
+    <label>{{author}}</label>
+    <br>
+    <label appMiDirectiva *ngIf='funSegundoBoton'>{{quote}}</label>
+    <br>
+    <button (click)="getQuotes()" *ngIf='funTercerBoton'>Obtener Mensaje</button>
+    <br>
+    <button (click)="metodoSegundoBoton()">Segundo Boton</button>
+    <br>
+    <button (click)="metodoTercerBoton()">Tercer Boton</button>
+    <br>
+    <img src="../../assets/imagenes/image.jpg" *ngIf='funCuartoBoton'>
+    <br>
+    <button (click)="metodoCuartoBoton()">Cuarto Boton</button>
+    <br>
 </div>
 <button (click)="metodoQuintoBoton()">Quinto Boton</button>
 <br>
-<label *ngIf='funEggBoton'>Yo soy tu Padre...!!! le dijo AnakymKerberos@gmail.com a su App</label>
+<div *ngFor='let Mensaje of eggMensaje'>
+    <label *ngIf='funEggBoton'>{{Mensaje}}</label>
+</div>

@@ -14,6 +14,7 @@ export class ConsumidorComponent implements OnInit {
   funCuartoBoton: boolean;
   funQuintoBoton: boolean;
   funEggBoton: boolean;
+  eggMensaje: string[] = ['El mensaje del Dia', 'Yo soy tu PADRE....', 'Lo dijo: AnakymKerberos@Gmail.com', 'A: su APP'];
 
   constructor(private servicio1: MiServicioService) {
   }
